@@ -1,12 +1,13 @@
 object investmentCalculatorForm: TinvestmentCalculatorForm
-  Left = 335
-  Height = 533
-  Top = 250
+  Left = 1360
+  Height = 539
+  Top = 450
   Width = 719
   Caption = 'Investment Calculator'
-  ClientHeight = 533
+  ClientHeight = 539
   ClientWidth = 719
   OnCreate = FormCreate
+  OnResize = FormResize
   object initInvestmentInput: TEdit
     Left = 88
     Height = 25
@@ -93,5 +94,57 @@ object investmentCalculatorForm: TinvestmentCalculatorForm
     Width = 280
     TabOrder = 5
     Visible = False
+  end
+  object PageControl1: TPageControl
+    Left = 400
+    Height = 464
+    Top = 0
+    Width = 312
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 6
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'TabSheet2'
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 539
+    Top = 0
+    Width = 120
+    Align = alLeft
+    AutoSize = True
+    Caption = 'Panel1'
+    ClientHeight = 539
+    ClientWidth = 120
+    TabOrder = 7
+    Visible = False
+    object Label5: TLabel
+      Left = 1
+      Height = 17
+      Top = 1
+      Width = 118
+      Caption = 'Offcanvas animation'
+      OnClick = Label5Click
+    end
+  end
+  object ToggleButton: TButton
+    Left = 448
+    Height = 25
+    Top = 488
+    Width = 179
+    Caption = 'Toggle offcanvas panel'
+    TabOrder = 8
+    OnClick = ToggleButtonClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 152
+    Top = 24
   end
 end
