@@ -1,0 +1,34 @@
+# Lazarus IDE
+*.~*
+*.ppu
+*.o
+*.a
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Compiled output
+*.compiled
+*.exe
+*.out
+
+# Lazarus project and form backup files
+*.bak
+*.old
+*.orig
+
+# IDE files (sometimes large or user-specific)
+*.lpi~
+*.lpr~
+*.lps~
+*.cfg
+*.lazstate
+*.fpdproj
+*.fprefs
+*.cache
+
+# MacOS and Windows system files
+.DS_Store
+Thumbs.db
