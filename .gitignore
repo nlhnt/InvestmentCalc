@@ -34,3 +34,5 @@
 Thumbs.db
 
 # other *res and *bat files
+*.res
+*.bat
