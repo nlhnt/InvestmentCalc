@@ -32,3 +32,5 @@
 # MacOS and Windows system files
 .DS_Store
 Thumbs.db
+
+# other *res and *bat files
