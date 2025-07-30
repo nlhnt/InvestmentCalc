@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, app, investment_logic
+  Forms, runtimetypeinfocontrols, app, investment_logic
   { you can add units after this };
 
 {$R *.res}

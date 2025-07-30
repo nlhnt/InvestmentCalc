@@ -1,97 +1,134 @@
 object investmentCalculatorForm: TinvestmentCalculatorForm
   Left = 335
-  Height = 533
+  Height = 500
   Top = 250
-  Width = 719
+  Width = 445
   Caption = 'Investment Calculator'
-  ClientHeight = 533
-  ClientWidth = 719
+  ClientHeight = 500
+  ClientWidth = 445
+  Constraints.MinHeight = 500
+  Constraints.MinWidth = 445
   OnCreate = FormCreate
-  object initInvestmentInput: TEdit
-    Left = 88
-    Height = 25
-    Top = 104
-    Width = 120
-    NumbersOnly = True
-    TabOrder = 0
-    Text = '100'
-    OnChange = initInvestmentInputChange
-  end
-  object annoInvestmentInput: TEdit
-    Left = 248
-    Height = 25
-    Top = 104
-    Width = 128
-    NumbersOnly = True
-    TabOrder = 1
-    Text = '1200'
-  end
-  object expectedReturnInput: TEdit
-    Left = 88
-    Height = 25
-    Top = 176
-    Width = 120
-    NumbersOnly = True
-    TabOrder = 2
-    Text = '5'
-    OnChange = expectedReturnInputChange
-  end
-  object durationInput: TEdit
-    Left = 248
-    Height = 25
-    Top = 176
-    Width = 128
-    NumbersOnly = True
-    TabOrder = 3
-    Text = '10'
-  end
-  object calculateButton: TButton
-    Left = 88
-    Height = 25
-    Top = 232
-    Width = 280
-    Caption = 'CALCULATE'
-    TabOrder = 4
-    OnClick = calculateButtonClick
-  end
-  object Label1: TLabel
-    Left = 88
-    Height = 17
-    Top = 88
-    Width = 96
-    Caption = 'Initial investment'
-    OnClick = Label1Click
-  end
-  object Label2: TLabel
-    Left = 248
-    Height = 17
-    Top = 88
-    Width = 105
-    Caption = 'Annual investment'
-    OnClick = Label1Click
-  end
-  object Label3: TLabel
-    Left = 88
-    Height = 17
-    Top = 160
-    Width = 92
-    Caption = 'Expected return'
-    OnClick = Label1Click
-  end
-  object Label4: TLabel
-    Left = 248
-    Height = 17
-    Top = 160
-    Width = 93
-    Caption = 'Duration (years)'
-    OnClick = Label1Click
-  end
   object resultGrid: TStringGrid
-    Left = 88
-    Height = 220
+    Left = 0
+    Height = 214
     Top = 288
-    Width = 280
-    TabOrder = 5
+    Width = 445
+    Anchors = [akTop, akLeft, akRight]
+    Constraints.MinHeight = 150
+    Constraints.MinWidth = 445
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    TabOrder = 0
     Visible = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 260
+    Top = 0
+    Width = 445
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    ClientHeight = 258
+    ClientWidth = 443
+    Constraints.MinHeight = 260
+    TabOrder = 1
+    object initInvestmentInput: TEdit
+      Left = 40
+      Height = 28
+      Top = 26
+      Width = 100
+      Anchors = []
+      Constraints.MinHeight = 28
+      Constraints.MinWidth = 100
+      NumbersOnly = True
+      TabOrder = 0
+      Text = '100'
+      OnChange = initInvestmentInputChange
+    end
+    object annoInvestmentInput: TEdit
+      Left = 223
+      Height = 28
+      Top = 26
+      Width = 108
+      Anchors = []
+      Constraints.MinHeight = 28
+      Constraints.MinWidth = 100
+      NumbersOnly = True
+      TabOrder = 1
+      Text = '1200'
+    end
+    object expectedReturnInput: TEdit
+      Left = 223
+      Height = 28
+      Top = 94
+      Width = 108
+      Anchors = []
+      Constraints.MinHeight = 28
+      Constraints.MinWidth = 100
+      NumbersOnly = True
+      TabOrder = 2
+      Text = '5'
+      OnChange = expectedReturnInputChange
+    end
+    object durationInput: TEdit
+      Left = 40
+      Height = 28
+      Top = 94
+      Width = 108
+      Anchors = []
+      Constraints.MinHeight = 28
+      Constraints.MinWidth = 100
+      NumbersOnly = True
+      TabOrder = 3
+      Text = '10'
+    end
+    object calculateButton: TButton
+      Left = 0
+      Height = 28
+      Top = 230
+      Width = 445
+      Align = alBottom
+      Caption = 'CALCULATE'
+      Constraints.MaxHeight = 28
+      Constraints.MinWidth = 445
+      TabOrder = 4
+      OnClick = calculateButtonClick
+    end
+    object Label1: TLabel
+      Left = 40
+      Height = 16
+      Top = 9
+      Width = 102
+      Anchors = []
+      Caption = 'Initial investment'
+      OnClick = Label1Click
+    end
+    object Label2: TLabel
+      Left = 223
+      Height = 16
+      Top = 9
+      Width = 113
+      Anchors = []
+      Caption = 'Annual investment'
+      OnClick = Label1Click
+    end
+    object Label3: TLabel
+      Left = 223
+      Height = 16
+      Top = 77
+      Width = 97
+      Anchors = []
+      Caption = 'Expected return'
+      OnClick = Label1Click
+    end
+    object Label4: TLabel
+      Left = 40
+      Height = 16
+      Top = 77
+      Width = 95
+      Anchors = []
+      Caption = 'Duration (years)'
+      OnClick = Label1Click
+    end
   end
 end

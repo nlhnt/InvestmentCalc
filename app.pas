@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Grids,
-  investment_logic;
+  ExtCtrls, RTTIGrids, investment_logic;
 
 type
 
@@ -14,6 +14,7 @@ type
 
   TinvestmentCalculatorForm = class(TForm)
     calculateButton: TButton;
+    GroupBox1: TGroupBox;
     initInvestmentInput: TEdit;
     annoInvestmentInput: TEdit;
     expectedReturnInput: TEdit;
